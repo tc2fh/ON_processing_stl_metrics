@@ -1,0 +1,3 @@
+[submodule "skeletor"]
+	path = skeletor
+	url = https://github.com/navis-org/skeletor.git
