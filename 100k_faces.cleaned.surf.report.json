@@ -1,0 +1,167 @@
+{
+  "created_at_utc": "2026-06-15T05:01:28.538502+00:00",
+  "input": "100k_faces.surf.stl",
+  "output": "100k_faces.cleaned.surf.stl",
+  "steps": [
+    "load STL without processing",
+    "merge exact duplicate vertices and remove duplicate/degenerate faces",
+    "keep largest edge-connected component",
+    "run pymeshfix repair without joining components",
+    "merge/validate repaired output and write binary STL"
+  ],
+  "component_selection": {
+    "component_count": 6,
+    "component_face_counts_desc": [
+      99957,
+      12,
+      8,
+      6,
+      4,
+      1
+    ],
+    "kept_faces": 99957,
+    "removed_faces": 31
+  },
+  "summaries": {
+    "raw_loaded": {
+      "name": "raw_loaded",
+      "vertices": 300000,
+      "faces": 100000,
+      "bounds_min": [
+        4238.99267578125,
+        7631.71484375,
+        1072.9686279296875
+      ],
+      "bounds_max": [
+        18434.806640625,
+        15543.193359375,
+        9728.75
+      ],
+      "component_count": 100000,
+      "component_face_counts_desc_top20": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "component_face_counts_omitted": 99980,
+      "euler_characteristic": 100000,
+      "trimesh_is_watertight": false,
+      "surface_area": 138965191.12508422,
+      "volume": 8294382991.531708,
+      "unique_edges": 300000,
+      "boundary_edges_count1": 300000,
+      "nonmanifold_edges_count_gt2": 0,
+      "max_edge_incidence": 1,
+      "manifold_edges_with_same_direction_uses": 0
+    },
+    "merged_for_topology": {
+      "name": "merged_for_topology",
+      "vertices": 49852,
+      "faces": 99988,
+      "bounds_min": [
+        4238.99267578125,
+        7631.71484375,
+        1072.9686279296875
+      ],
+      "bounds_max": [
+        18434.806640625,
+        15543.193359375,
+        9728.75
+      ],
+      "component_count": 6,
+      "component_face_counts_desc_top20": [
+        99957,
+        12,
+        8,
+        6,
+        4,
+        1
+      ],
+      "component_face_counts_omitted": 0,
+      "euler_characteristic": -143,
+      "trimesh_is_watertight": false,
+      "surface_area": 138960436.6060614,
+      "volume": 8294290933.98969,
+      "unique_edges": 149983,
+      "boundary_edges_count1": 23,
+      "nonmanifold_edges_count_gt2": 17,
+      "max_edge_incidence": 4,
+      "manifold_edges_with_same_direction_uses": 0
+    },
+    "largest_component": {
+      "name": "largest_component",
+      "vertices": 49828,
+      "faces": 99957,
+      "bounds_min": [
+        4238.99267578125,
+        7631.71484375,
+        1072.9686279296875
+      ],
+      "bounds_max": [
+        18434.806640625,
+        15543.193359375,
+        9728.75
+      ],
+      "component_count": 1,
+      "component_face_counts_desc_top20": [
+        99957
+      ],
+      "component_face_counts_omitted": 0,
+      "euler_characteristic": -150,
+      "trimesh_is_watertight": false,
+      "surface_area": 138944661.98587823,
+      "volume": 8292793767.667102,
+      "unique_edges": 149935,
+      "boundary_edges_count1": 20,
+      "nonmanifold_edges_count_gt2": 17,
+      "max_edge_incidence": 4,
+      "manifold_edges_with_same_direction_uses": 0
+    },
+    "repaired_output": {
+      "name": "repaired_output",
+      "vertices": 49761,
+      "faces": 99798,
+      "bounds_min": [
+        4238.99267578125,
+        7631.71484375,
+        1072.9686279296875
+      ],
+      "bounds_max": [
+        18434.806640625,
+        15543.193359375,
+        9728.75
+      ],
+      "component_count": 1,
+      "component_face_counts_desc_top20": [
+        99798
+      ],
+      "component_face_counts_omitted": 0,
+      "euler_characteristic": -138,
+      "trimesh_is_watertight": true,
+      "surface_area": 138854949.3568629,
+      "volume": 8293768819.863988,
+      "unique_edges": 149697,
+      "boundary_edges_count1": 0,
+      "nonmanifold_edges_count_gt2": 0,
+      "max_edge_incidence": 2,
+      "manifold_edges_with_same_direction_uses": 0
+    }
+  }
+}

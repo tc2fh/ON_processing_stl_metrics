@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.cache/
+.uv-cache/
+
+# Third-party library clone (has its own .git; install separately)
+/skeletor/
+
+# Exceeds GitHub's 100MB file size limit
+/Result.to-labelfield-8_bits0000.surf.stl

@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-06-15T05:06:42.503959+00:00",
+  "input": "100k_faces.cleaned.surf.stl",
+  "msh": "100k_faces.tet.msh",
+  "vtu": "100k_faces.tet.vtu",
+  "mesh_size": {
+    "min": 20.844133201950534,
+    "max": 174.1049041394832,
+    "chosen_from_surface_defaults": {
+      "surface_edge_p01": 20.844133201950534,
+      "surface_edge_p10": 33.427614612164206,
+      "surface_edge_p50": 58.034968046494406,
+      "surface_edge_p90": 91.4456530241258,
+      "mesh_size_min": 20.844133201950534,
+      "mesh_size_max": 174.1049041394832
+    }
+  },
+  "gmsh": {
+    "classification_angle_degrees": 40.0,
+    "curve_angle_degrees": 180.0,
+    "force_parametrizable_patches": true,
+    "reparametrize": false,
+    "algorithm3d": 1,
+    "gmsh_node_count": 63491,
+    "gmsh_element_counts": {
+      "Triangle 3": 99798,
+      "Tetrahedron 4": 204174
+    },
+    "surface_patch_count": 1,
+    "surface_tags": [
+      1
+    ],
+    "volume_tag": 1,
+    "mode": "discrete_surface"
+  },
+  "meshio": {
+    "point_count": 63491,
+    "cell_counts": {
+      "triangle": 99798,
+      "tetra": 204174
+    },
+    "tetra_quality": {
+      "edge_ratio_p50": 1.9960993112372485,
+      "edge_ratio_p90": 2.92402038708382,
+      "edge_ratio_p99": 4.414471838449855,
+      "edge_ratio_max": 16.143234036324497,
+      "tet_volume_sum": 8293768819.863989,
+      "tet_volume_min": 65.83687709318474,
+      "tet_volume_p50": 18672.057684223044
+    }
+  }
+}
